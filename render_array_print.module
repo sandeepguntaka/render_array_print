@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains render_array_print.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function render_array_print_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the render_array_print module.
+    case 'help.page.render_array_print':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module to support printing of a render array where the render array is built through the code.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

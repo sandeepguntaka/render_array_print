@@ -1,0 +1,4 @@
+services:
+  render_array_print.builder:
+    class: Drupal\render_array_print\PrintBuilder
+    arguments: ["@renderer", "@plugin.manager.entity_print.print_engine"]
